@@ -1,11 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
-
-
-
-
         class Cupcake {
 
             public double price;
@@ -95,6 +90,7 @@ import java.util.Scanner;
         priceText = input.nextLine();
         price = Double.parseDouble(priceText);
         chocolate.setPrice(price);
+
         cupcakeMenu.add(cupcake);
         cupcakeMenu.add(redVelvet);
         cupcakeMenu.add(chocolate);
@@ -121,6 +117,8 @@ import java.util.Scanner;
         soda.setPrice(price);
 
         System.out.println("We are deciding on the price for our bottle of milk. Here is the description: ");
+        milk.type();
+        System.out.println("How much would you like to charge for the milk?");
         priceText = input.nextLine();
         price = Double.parseDouble(priceText);
         milk.setPrice(price);
